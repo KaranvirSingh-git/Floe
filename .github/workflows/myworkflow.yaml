@@ -1,15 +1,14 @@
 name : Testing workflow_dispatch
 
 on:
-  workflow_dispatch
+  workflow_dispatch: 
 
 jobs:
-  runs-on: ubuntu-latest
+  my-job:
+    runs-on: ubuntu-latest
 
-  steps:
-  -name: Saying hello to this
-  uses: echo "Hello, using workflow_dispatch to ensure this can be triggered manually from the portal"
+    steps:
+      - name: Say Hello
+        run: echo " Manually triggered workflow! - Karan"
 
-  -name: Next steps are here
-  uses: echo "This is the thing about it, to ensure it is live and tested properly"
 
