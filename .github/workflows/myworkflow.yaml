@@ -1,14 +1,16 @@
 name : Building a docker image
 
 on:
-  push:
-    branches: [master]
+  workflow_dispatch
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  runs-on: ubunut-latest
 
-    steps:
-    -name: Checkout Code Repo
-    uses: actions/Checkout@v4
-    
+  steps:
+  -name: Saying hello to this
+  uses: echo "Hello, using workflow_dispatch to ensure this can be triggered manually from the portal"
+
+  -name: Next steps are here
+  uses: echo "This is the thing about it, to ensure it is live and tested properly"
+
+  
