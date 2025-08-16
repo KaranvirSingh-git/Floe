@@ -1,4 +1,4 @@
-name : Building a docker image
+name : Testing workflow_dispatch
 
 on:
   workflow_dispatch
@@ -13,4 +13,3 @@ jobs:
   -name: Next steps are here
   uses: echo "This is the thing about it, to ensure it is live and tested properly"
 
-  
