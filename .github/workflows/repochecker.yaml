@@ -1,4 +1,4 @@
-0name : To_check_repos
+name : To_check_repos
 
 on:
   pull_request:
